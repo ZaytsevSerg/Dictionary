@@ -65,6 +65,7 @@ const handleSubmit = async (e) => {
 
   if (!state.word.trim()) return;
 
+  
   try {
     const response = await fetch(`${url}${state.word}`);
     const data = await response.json();
